@@ -18,8 +18,14 @@ app.use(expressValidator());
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 
+//custom middleware
+const propMiddleware = (req, res, next)=>{
+    console.log("Middleware working");
+    next();
+};
+
 //Routes
-app.use("/", formRoutes);
+app.use("/",formRoutes);
 
 
 //Port settings

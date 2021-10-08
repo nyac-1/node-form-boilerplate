@@ -6,6 +6,13 @@ const getForm = (req, res)=>{
 
     return res.status(200).json({response: smth});
 }
+
+const postForm = (req, res)=>{
+    console.log(req.body);
+    return res.status(200).json({response: "kudos!"});
+}
+
 module.exports = {
     getForm,
+    postForm
 }
