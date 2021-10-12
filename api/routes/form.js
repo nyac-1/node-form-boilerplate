@@ -3,7 +3,7 @@ const formController = require('../controllers/form.js');
 
 const router = express.Router();
 
-router.post("/", formController.postForm);
+router.post("/postinfoset",formValidation,formController.postForm);
 router.get("/", formController.getForm);
 
 module.exports = router;

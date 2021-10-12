@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const expressValidator = require('express-validator');
 
-//proprietary
+//routes
 const formRoutes = require('./routes/form.js');
 
 //init
